@@ -1,3 +1,5 @@
+/*MIXIN*/
+
 @mixin fontSize ($tamanio,$peso,$color) {
     font-size: $tamanio;
     font-weight: $peso;
