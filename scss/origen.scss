@@ -1,20 +1,16 @@
 @import "extend";
 @import "mixin";
 @import "maps";
+@import "background";
 
-$color: (red);
+$color: (gold);
 
 
 *{
     margin: 0;
 }
 
-body {
-    background-color: #142e5a;
-    background-image: linear-gradient(315deg, #29539b 0%, #0c1b36 74%);
-    background-position: cover;
-    color: #fff;
-}
+
 
 header {
     display: inline-block;
@@ -77,8 +73,8 @@ a img:hover {
     content: '';
     right: 0;
     top: 0;
-    border-top: 3px solid gold;
-    border-right: 3px solid gold;
+    border-top: 3px solid $color;
+    border-right: 3px solid $color;
     transform: translate(-100%, 50%);
   }
   
@@ -86,8 +82,8 @@ a img:hover {
     content: '';
     left: 0;
     bottom: 0;
-    border-bottom: 3px solid gold;
-    border-left: 3px solid gold;
+    border-bottom: 3px solid $color;
+    border-left: 3px solid $color;
     transform: translate(100%, -50%)
   }
   
@@ -98,7 +94,7 @@ a img:hover {
   }
   
   .navbar-nav a.nav-link:hover {
-    color: gold;
+    color: $color;
   }
 
 a.nav-link {
@@ -131,7 +127,7 @@ span {
     height: 100%;
 
 &:hover {
-    background-color: gold;
+    background-color: $color;
     height: 100%;
     border: 3px solid rgb(65, 63, 63);
     transform: scale(1,1.1);
