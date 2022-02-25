@@ -10,15 +10,13 @@ $color: (gold);
     margin: 0;
 }
 
-
-
 header {
     display: inline-block;
 }
 a img {
     transition: 2s;
-}
-a img:hover {
+
+&:hover {
     border-radius : 55% ;
     padding-left: 20px;
     transition: 1.2s;
@@ -28,8 +26,8 @@ a img:hover {
     5px 5px $color;
     -webkit-transform: translateX(-1px);
     transform: translateX(-1px);
+  }
 }
-
 .barraMenu {
     float: right;
 }
@@ -38,12 +36,12 @@ a img:hover {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-  }
   
-  .navbar-nav * {
+ * {
     box-sizing: border-box;
     transition: all .35s ease;
   }
+}
   
   .navbar-nav li.nav-item {
     display: inline-block;
@@ -57,10 +55,10 @@ a img:hover {
     position: relative;
     text-decoration: none;
     font-size: 20px;
-  }
   
-  .navbar-nav a.nav-link::before,
-  .navbar-nav a.nav-link::after {
+  
+  &::before,
+  &::after {
     content: '';
     height: 14px;
     width: 14px;
@@ -69,7 +67,7 @@ a img:hover {
     opacity: 0;
   }
   
-  .navbar-nav a.nav-link::before {
+  &::before {
     content: '';
     right: 0;
     top: 0;
@@ -77,8 +75,8 @@ a img:hover {
     border-right: 3px solid $color;
     transform: translate(-100%, 50%);
   }
-  
-  .navbar-nav a.nav-link:after {
+
+  &:after {
     content: '';
     left: 0;
     bottom: 0;
@@ -86,17 +84,17 @@ a img:hover {
     border-left: 3px solid $color;
     transform: translate(100%, -50%)
   }
-  
-  .navbar-nav a.nav-link:hover:before,
-  .navbar-nav a.nav-link:hover:after{
+
+  &:hover:before,
+  &:hover:after{
     transform: translate(0,0);
     opacity: 1;
   }
-  
-  .navbar-nav a.nav-link:hover {
+
+  &:hover {
     color: $color;
   }
-
+}
 a.nav-link {
     color: white;
     font-weight:bold;

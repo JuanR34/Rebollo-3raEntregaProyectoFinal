@@ -106,7 +106,6 @@ header {
 a img {
   transition: 2s;
 }
-
 a img:hover {
   border-radius: 55%;
   padding-left: 20px;
@@ -125,7 +124,6 @@ a img:hover {
   text-align: center;
   font-weight: 600;
 }
-
 .navbar-nav * {
   box-sizing: border-box;
   transition: all 0.35s ease;
@@ -144,9 +142,7 @@ a img:hover {
   text-decoration: none;
   font-size: 20px;
 }
-
-.navbar-nav a.nav-link::before,
-.navbar-nav a.nav-link::after {
+.navbar-nav a.nav-link::before, .navbar-nav a.nav-link::after {
   content: "";
   height: 14px;
   width: 14px;
@@ -154,7 +150,6 @@ a img:hover {
   transition: all 0.35s ease;
   opacity: 0;
 }
-
 .navbar-nav a.nav-link::before {
   content: "";
   right: 0;
@@ -163,7 +158,6 @@ a img:hover {
   border-right: 3px solid gold;
   transform: translate(-100%, 50%);
 }
-
 .navbar-nav a.nav-link:after {
   content: "";
   left: 0;
@@ -172,13 +166,10 @@ a img:hover {
   border-left: 3px solid gold;
   transform: translate(100%, -50%);
 }
-
-.navbar-nav a.nav-link:hover:before,
-.navbar-nav a.nav-link:hover:after {
+.navbar-nav a.nav-link:hover:before, .navbar-nav a.nav-link:hover:after {
   transform: translate(0, 0);
   opacity: 1;
 }
-
 .navbar-nav a.nav-link:hover {
   color: gold;
 }
